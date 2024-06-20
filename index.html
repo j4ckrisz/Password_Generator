@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
+
     <title>p4sswdg3n</title>
+
 </head>
+
 <body>
 
-    <h1>Welcome to my Password Generator</h1><br>
+    <div class="container">
+
+        <img src="img/eye.png" alt="Password Generator Logo">
+
+        <h1>So, you need a strong password.</h1>
+    
+        <label>
+            <input type="checkbox" id="lowercase" checked> Include Lowercase
+        </label>
+      
+        <label>
+            <input type="checkbox" id="uppercase" checked> Include Uppercase
+        </label>
+      
+        <label>
+
+            <input type="checkbox" id="numbers" checked> Include Numbers
+
+        </label>
+      
+        <label>
+
+            <input type="checkbox" id="symbols" checked> Include Symbols
+
+        </label>
+
+        <label>
+
+            Password Length:
+
+            <input type="number" id="passwordLength" value="12" min="1" max="100">
+        
+        </label>
+
+        <button id="generateButton">Generate Password</button>
+
+        <p id="passwordOutput">>____</p>
+
+    </div>
     
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
